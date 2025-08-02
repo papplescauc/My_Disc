@@ -91,8 +91,6 @@ def create_all_tables(conn: psycopg.Connection):
 
 
 
-
-
 if __name__ == "__main__":
     load_dotenv()
     with psycopg.connect(f"dbname=mydisc_db user={os.getenv('DB_USER')} password={os.getenv('DB_PASSWORD')}") as conn:

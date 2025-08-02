@@ -1,11 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    1/0
-    return "Hello, World!"
+def home_view():
+    return render_template('index.html')
+
+@app.route('/courses')
+def courses_view():
+    return 'Course Page'
 
 
 
