@@ -10,6 +10,10 @@ def home_view():
 def courses_view():
     return 'Course Page'
 
+@app.route('/login')
+def login_view():
+    return render_template('login.html')
+
 
 
 if __name__ == "__main__":
