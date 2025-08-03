@@ -8,7 +8,12 @@ def home_view():
 
 @app.route('/courses')
 def courses_view():
-    return 'Course Page'
+    return render_template('courses.html')
+
+
+@app.route('/current_round')
+def current_round_view():
+    return render_template('current_round.html')
 
 @app.route('/login')
 def login_view():

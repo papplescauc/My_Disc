@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <title>Current Round</title>
+{% endblock %}
+
+{% block navbar %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <h1 style="margin: auto; text-align: center">Given Course - Given Layot</h1>
+    <div class="container-fluid">
+            <button type="submit" class="btn btn-primary">Next Hole</button>
+            <button type="submit" class="btn btn-primary">Previous Hole</button>
+            <button type="submit" class="btn btn-primary">Button that subtracts a stroke</button>
+            <button type="submit" class="btn btn-primary">Button that adds a stroke</button>
+    </div>
+{% endblock %}
+
