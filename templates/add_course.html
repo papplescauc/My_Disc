@@ -14,8 +14,10 @@
         <h1 style="margin: auto; text-align: center;">Add a Course</h1>
 
         <form id="main-form">
-            <input type="number" min="0" class="form-control" id="course_name" name="course_name" placeholder="Course Name">
-            <button type="Submit" id="submit-button">Submit</button>
+            <input type="text" min="0" class="form-control" id="course_name" name="course_name" placeholder="Course Name" required>
+            <input type="number" min="0" class="form-control" id="num_holes" name="num_holes" placeholder="# of holes">
+            <input type="number" min="0" class="form-control" id="par" name="par" placeholder="par #">
+            <button type="Submit" class="btn-primary" id="submit-button">Submit</button>
 
         </form>
     </div>
