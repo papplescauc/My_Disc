@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <title>MyDisc | Add a Course</title>
+    <script src="/static/js/add_course.js"></script>
+{% endblock %}
+
+{% block navbar %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <h1 style="margin: auto; text-align: center;">Add a Course</h1>
+
+        <form id="main-form">
+            <input type="number" min="0" class="form-control" id="course_name" name="course_name" placeholder="Course Name">
+            <button type="Submit" id="submit-button">Submit</button>
+
+        </form>
+    </div>
+
+{% endblock %}

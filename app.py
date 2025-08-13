@@ -10,6 +10,12 @@ def home_view():
 def courses_view():
     return render_template('courses.html')
 
+@app.route('/courses/add')
+def add_course_view():
+    
+    return render_template('add_course.html')
+
+
 
 @app.route('/current_round')
 def current_round_view():
@@ -22,4 +28,4 @@ def login_view():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=8080, debug = True)
+    app.run(host='127.0.0.1', port=8080, debug=False)
